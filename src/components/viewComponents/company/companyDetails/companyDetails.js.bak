@@ -1,0 +1,63 @@
+import React, { Component, Fragment } from 'react';
+import MaterializeComponent from 'materialize-css';
+import Menu from '../../../baseComponents/menu';
+import { companyTabDetails } from '../companyTabDetails';
+import { CompanyRoutes } from '../../../../routes/mainRoutes';
+import SaveBar from '../../../applicationComponents/saveBar';
+import { modalTitleConstant,modalMessageConstant } from '../../../../constants/modalConstants';
+
+class CompanyDetails extends Component {   
+    constructor(props) {
+        super(props);
+        this.state = {
+            isOpen: false
+        };
+        this.confirmationModalData = {
+            title: "",
+            message: "",
+            type: "",
+            modalClassName: "",
+            buttons: []
+        };
+    }
+
+    componentDidMount(){
+        const custModal = document.querySelectorAll('.modal');
+        const custModalInstances = MaterializeComponent.Modal.init(custModal, { "dismissible": false });
+
+        this.props.actions.FetchCompanyDetails();
+        this.props.actions.FetchCountry();        
+        this.props.actions.CompanyFetchVatPrefix();
+    }
+    
+    companySaveHandler = () => {};
+    companyCancelHandler = () => {};    
+
+    render() {
+        const { companyDetail } = this.props;
+        let companyDetailData = [];
+        if(companyDetail){
+            companyDetailData = companyDetail;
+        }
+        return (
+            <Fragment>
+                <SaveBar codeLabel="Company Code:"
+                    codeValue={companyDetailData.companyCode}
+                    currentMenu="Company:"
+                    currentSubMenu="Edit / View Company"
+                    saveClick={this.companySaveHandler}
+                    cancelClick={this.companyCancelHandler} />
+                <div className="row">
+                    <div className='col s2 pr-0'>
+                        <Menu menulist={companyTabDetails} menuClass="verticalMenu" name='tabHeader' url='tabBodyComponent'></Menu>
+                    </div>
+                    <div className='col s10 pl-0'>
+                        <CompanyRoutes />
+                    </div>
+                </div>
+            </Fragment>
+        );
+    }
+}
+
+export default CompanyDetails;

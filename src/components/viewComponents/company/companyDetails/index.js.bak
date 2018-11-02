@@ -1,0 +1,25 @@
+import CompanyDetails from './companyDetails';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { FetchCompanyDetails, FetchCountry, CompanyFetchVatPrefix } from '../../company/companyAction';
+
+const mapStateToProps = (state) => {
+    return {
+        companyDetail: state.CompanyReducer.companyDetail.CompanyInfo,
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        actions: bindActionCreators(
+            {
+                FetchCompanyDetails,
+                FetchCountry,
+                CompanyFetchVatPrefix
+            },
+            dispatch
+        ),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CompanyDetails);
