@@ -1,0 +1,50 @@
+.customIcon {
+  border: solid 1px;
+  border-color: #dee0e2;
+  border-radius: 5px 0 0 5px;
+  top: 0 !important;
+  text-align: center;
+      opacity: 0.5;
+}
+.passwordIcon {
+  float: right;
+  margin-top: -28px;
+  opacity: 0.25;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.input-field .prefix {
+  position: absolute;
+  width: 3rem;
+  height: 2.7rem;
+  font-size: 1.76rem;
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+  top: 0.5rem;
+  opacity: 0.5;
+}
+label {
+  font-size: 1.1rem;
+  color: #757575;
+}
+select{
+  font-size: 1rem;
+  color: #757575;
+}
+input.browser-default {
+  height: 2.3rem;
+  border: 1px solid #dee0e2;
+}
+[type="checkbox"] + span:not(.lever){
+  padding-left: 25px;
+  margin-left: 5px;
+}
+[type="radio"]:not(:checked) + span, [type="radio"]:checked + span{
+  padding-left:25px;
+}
+body [type="radio"]:not(:checked), body [type="radio"]:checked{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}

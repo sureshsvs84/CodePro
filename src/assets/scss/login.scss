@@ -1,0 +1,85 @@
+.LoginPageContent{
+    overflow: hidden;
+    margin:0px !important;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    .loginParentStyle{
+        height:100%;
+        margin-bottom: -25px;
+    }
+    .Logoimg{
+        z-index: 10;
+        max-width: 75%;
+        height: auto;
+        margin-top: 40%;
+        margin-bottom:35%;
+    }
+    .circleOuterStyle{
+        height:100%;
+        padding-top:20px;
+        padding-bottom:50px;
+    }
+    .circleStyle{
+        margin-left:-50px !important;
+        background-color: $brand-color;
+        .lightBlueCircle{
+            padding:100px;
+            background-color:$interaction-blue;
+            position:absolute;
+            opacity: 0.75;
+            margin-top: -190px;
+            margin-left: -50px;
+        }
+        .whiteCircle{
+            padding: 85px 140px;
+            background-color:$white;
+            position: absolute;
+            opacity: 0.75;
+            margin-top: -30px;
+            margin-left: 10px;
+	        border-top-left-radius: 280px;
+            border-top-right-radius: 280px;
+        }
+    }
+    .LoginStyles{
+        margin: 0;
+        width: 50% !important;
+        padding: 15px;
+        position: absolute;
+        top: 50%;
+        left: 80% !important;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.Loginform{
+    float: none !important;
+    margin: auto;
+    .imageStyles{
+        opacity: 0.25;
+    }
+    .customIcon{
+        border: solid 1px;
+        border-color: $input-border-color;
+        border-radius: 5px 0 0 5px;
+        top: 0 !important;
+        text-align: center;
+    }
+    .passwordIcon{
+        float:right;
+        margin-top:-40px;
+        opacity:0.25;
+        cursor:pointer;
+    }
+    input{
+        border: solid 1px !important;
+        border-color: $input-border-color !important;
+        border-radius: 0 5px 5px 0 !important;
+    }
+    [type="checkbox"].filled-in:checked + span:not(.lever):after{
+        background-color: $info;
+        border:2px solid $info !important;
+    }   
+}

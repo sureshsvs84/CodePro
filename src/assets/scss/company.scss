@@ -1,0 +1,25 @@
+.customCreateDiv{
+    position: relative;
+    top: 29px;
+}
+
+.add-text{
+    font-size:12px;
+}  
+
+.companyPageContainer{
+    .collapsible{
+        .collapsible-header{
+            background-color: #fff;
+        }
+        .collapsible-body{
+            padding: 0.5rem;
+            background-color: #fff;
+        }
+    }
+}
+
+//Remove below code
+// #createPayrollPeriod{
+//     min-height: 350px;
+// }

@@ -1,16 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './views/';
+import registerServiceWorker from './registerServiceWorker';
+import { Provider } from 'react-redux';
+import store from './store/reduxStore';
+import "@babel/polyfill";
+import { BrowserRouter } from 'react-router-dom';
 
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<BrowserRouter>
+    <Provider store={store}>
+                        <App />
+                    </Provider></BrowserRouter>,
+                     document.getElementById('root'));
+                registerServiceWorker();
