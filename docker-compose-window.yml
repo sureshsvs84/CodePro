@@ -1,0 +1,12 @@
+version: '3'
+
+services:       
+    evolution.spa:
+      image: evolution/spa:${TAG:-latest}
+      build:
+        context: .
+        dockerfile: Dockerfile
+networks:
+  default:
+    external:
+      name: nat

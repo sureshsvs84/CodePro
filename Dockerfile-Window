@@ -1,0 +1,14 @@
+# base image
+FROM stefanscherer/node-windows
+
+WORKDIR /evo2client
+
+# Install dependencies
+COPY package.json /evo2client
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD [ "npm.cmd", "start" ]

@@ -1,0 +1,15 @@
+# base image
+FROM node:9.6.1
+
+# Prepare app directory
+RUN mkdir -p /app/evo2client
+WORKDIR /app/evo2client
+
+# Install dependencies
+COPY package.json /app/evo2client
+RUN npm install --silent
+
+ADD . /app/evo2client
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
