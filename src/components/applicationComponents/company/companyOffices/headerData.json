@@ -1,0 +1,82 @@
+{
+    "columnDefs": [              
+        {
+            "headerCheckboxSelectionFilteredOnly": true,
+            "checkboxSelection": true,
+            "suppressFilter": true,
+            "width":50
+        },
+        {
+            "headerName": "Office Name",
+            "field": "officeName",            
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Office Name",
+            "width": 130
+        },
+        {
+            "headerName": "Accounts Ref",
+            "field": "accountRef",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Accounts Ref",
+            "width": 130
+        },
+        {
+            "headerName": "Full Address",
+            "field": "fullAddress",
+            "filter": "agTextColumnFilter",
+            "tooltipField": "fullAddress",
+            "width": 150
+        },
+        {
+            "headerName": "Country",
+            "field": "country",
+            "filter": "agTextColumnFilter",
+            "width": 120
+        },
+        {
+            "headerName": "State / Country Pro",
+            "field": "state",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "State / Country Pro",
+            "width": 100
+        },        
+        {
+            "headerName": "City",
+            "field": "city",
+            "filter": "agTextColumnFilter",            
+            "width": 100
+        },
+        {
+            "headerName": "Pincode",
+            "field": "postalCode",
+            "filter": "agTextColumnFilter",
+            "width": 120
+        },
+        {
+            "headerName": "",
+            "field": "addressId",
+            "cellRenderer": "EditRenderer",
+            "cellRendererParams": {
+                "action": "EditCompanyOffice",
+                "popupId": "add-location"
+            },
+            "suppressFilter": true,
+            "suppressSorting": true,
+            "width": 80
+        },       
+        {
+            "headerName": "Record Status",
+            "field": "recordStatus",
+            "hide": true
+        },
+        {
+            "headerName": "Address Id",
+            "field": "addressId",
+            "hide": true
+        }
+    ],
+    "enableFilter": true,
+    "enableSorting": true,
+    "rowSelection": "multiple",
+    "gridHeight":60
+}

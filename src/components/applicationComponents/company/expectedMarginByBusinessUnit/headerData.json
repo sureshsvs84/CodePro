@@ -1,0 +1,41 @@
+{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter":true,
+            "width":50
+        },
+        {
+            "headerName": "Business Unit",
+            "field": "marginType",
+            "filter": "agTextColumnFilter",
+            "width":500
+        },
+        {
+            "headerName": "Minimum Expected Margin %",
+            "field": "minimumMargin",
+            "filter": "agTextColumnFilter",
+            "width":300
+        },
+        {
+            "headerName": "",
+            "field": "",
+            "cellRenderer": "EditRenderer",
+            "cellRendererParams": {
+                "action": "EditExpectedMargin",
+                "popupId": "add-expected-margin"
+            },
+            "suppressFilter": true,
+            "width": 135
+        }
+    ],
+    "defaultColDef": {
+        "width": 80
+      },
+    "enableFilter":true, 
+    "enableSorting":true,
+    "rowSelection": "multiple", 
+    "pagination": true,
+    "gridHeight":50
+}
