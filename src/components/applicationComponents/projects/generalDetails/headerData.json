@@ -1,0 +1,110 @@
+{"GeneralAddressHeader":{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter":true,
+            "width":50
+        },
+        {
+            "headerName": "Country",
+            "field": "country",
+            "filter": "agTextColumnFilter"           
+
+        },
+        {
+            "headerName": "State/country Province",
+            "field": "province",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "City",
+            "field": "city",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Address",
+            "field": "address",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "EU VAT Prefix",
+            "field": "euVatPrefix",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "VAT Tax Registration No.",
+            "field": "vatTaxRegNumber",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "",
+            "field": "editCustAddressRender",
+            "cellRenderer":"editCustAddressRender",
+            "suppressFilter":true,
+            "width": 200
+        }
+    ],
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": false,
+    "rowSelection":"multiple",
+    "searchable":true,
+    "gridActions":true,
+    "gridTitlePanel":false
+},
+"GeneralContactHeader":{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter":true,
+            "width":50
+        },
+        {
+            "headerName": "Contact Name",
+            "field": "contactPersonName",
+            "filter": "agTextColumnFilter"           
+        },
+        {
+            "headerName": "Salutation",
+            "field": "salutation",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Position",
+            "field": "position",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Telephone No",
+            "field": "landline",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Fax No",
+            "field": "fax",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Email",
+            "field": "email",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Others Details",
+            "field": "otherDetail",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Extranet",
+            "field": "defaultUse",
+            "filter": "agTextColumnFilter"
+        }
+    ],
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": false
+}
+
+}

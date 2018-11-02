@@ -1,0 +1,74 @@
+{
+    "CustomerAssignmentHeader": {
+        "columnDefs": [
+            {
+                "checkboxSelection": true,
+                "headerCheckboxSelectionFilteredOnly": true,
+                "suppressFilter":true,
+                "width":50
+            },
+            {
+                "headerName": "Assignment Reference Type",
+                "field": "assignmentRefType",
+                "filter": "agTextColumnFilter",                
+                "width": 850
+            },
+            {
+                "headerName": "",
+                "field": "customerAssignmentReferenceId", 
+                "width": 80,               
+                "cellRenderer": "EditRenderer",
+                "cellRendererParams": {
+                    "action": "EditAssignmentReference",
+                    "popupId": "assignmentReferenceType"
+                },
+                "suppressFilter": true,
+                "suppressSorting": true
+            }
+        ],
+        "enableFilter": true,
+        "enableSorting": true,
+        "pagination": false,
+        "rowSelection": "multiple",
+        "gridHeight":40
+    },
+    "CustomerAccountRefrencesHeader": {
+        "columnDefs": [
+            {
+                "checkboxSelection": true,
+                "headerCheckboxSelectionFilteredOnly": true,
+                "suppressFilter":true,
+                "width":50
+            },
+            {
+                "headerName": "Company Name",
+                "field": "companyName",
+                "filter": "agTextColumnFilter",                
+                "width": 400
+            },
+            {
+                "headerName": "Account Reference",
+                "field": "accountReferenceValue",
+                "filter": "agTextColumnFilter",
+                "width": 450
+            },
+            {
+                "headerName": "",
+                "field": "customerCompanyAccountReferenceId",   
+                "width": 80,             
+                "cellRenderer": "EditRenderer",
+                "cellRendererParams": {
+                    "action": "EditAccountReference",
+                    "popupId": "accountReference"
+                },
+                "suppressFilter": true,
+                "suppressSorting": true
+            }
+        ],
+        "enableFilter": true,
+        "enableSorting": true,
+        "pagination": false,
+        "rowSelection": "multiple",
+        "gridHeight":40
+    }
+}

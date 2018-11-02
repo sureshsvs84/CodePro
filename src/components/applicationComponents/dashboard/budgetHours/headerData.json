@@ -1,0 +1,65 @@
+{
+    "columnDefs": [
+        {
+            "headerName": "Customer",
+            "field": "contractno",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Contract Number",
+            "field": "projectno",
+            "filter": "agNumberColumnFilter"
+        },
+        {
+            "headerName": "Customer Contract Number",
+            "field": "projectname",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Project",
+            "field": "assignmentno",
+            "filter": "agNumberColumnFilter"
+        },
+        {
+            "headerName": "Assignment",
+            "field": "assignmentref",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Unit",
+            "field": "customer",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Warning",
+            "field": "operatingcoordinator",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Invoiced To Date",
+            "field": "technicalspecialist",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Uninvoiced to Date Excl",
+            "field": "",
+            "filter": "agTextColumnFilter"
+        },
+        {
+            "headerName": "Remaining",
+            "field": "supplierponumber",
+            "filter": "agTextColumnFilter"
+        }
+    ],
+    "defaultColDef": {
+        "width": 80
+      },
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": true,
+    "searchable":true,
+    "gridActions":true,
+    "gridTitlePanel":true,
+    "gridHeight":65
+}
+

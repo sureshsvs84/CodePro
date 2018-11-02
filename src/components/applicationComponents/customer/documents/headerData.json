@@ -1,0 +1,78 @@
+{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter": true,
+            "width": 50
+        },
+        {
+            "headerName": "Name",
+            "field": "name",
+            "filter": "agTextColumnFilter",
+            "cellRenderer": "FileToBeOpen",
+            "cellRendererParams": {
+                "dataToRender": "name"
+            }
+        },
+        {
+            "headerName": "Type",
+            "field": "documentType",
+            "filter": "agTextColumnFilter",
+            "width": 150
+        },
+        {
+            "headerName": "Size in KB's",
+            "field": "documentSize",
+            "filter": "agTextColumnFilter",
+            "width": 100,
+            "headerTooltip": "Size in KB's"
+        },
+        {
+            "headerName": "Uploaded Date",
+            "field": "uploadedOn",
+            "filter": "agTextColumnFilter",
+            "cellRenderer": "DateComponent",
+            "cellRendererParams": {
+                "dataToRender": "uploadedOn"
+            },
+            "headerTooltip": "Uploaded Date",
+            "width": 150
+        },
+        {
+            "headerName": "Customer Visible",
+            "field": "visibleToCustomer",
+            "filter": "agTextColumnFilter",
+            "width": 120,
+            "headerTooltip": "Customer Visible"
+        },
+        {
+            "headerName": "TS Visible",
+            "field": "visibleToTS",
+            "filter": "agTextColumnFilter",
+            "width": 100,
+            "headerTooltip": "TS Visible"
+        },
+        {
+            "headerName": "",
+            "field": "documentId",
+            "cellRenderer": "EditRenderer",
+            "cellRendererParams": {
+                "action": "EditDocumentDetails",
+                "popupId": "uploadDocuments"
+            },
+            "suppressFilter": true,
+            "suppressSorting": true,
+            "width": 100
+        },
+        {
+            "headerName": "upload Data Id",
+            "field": "uploadDataId",
+            "hide": true
+        }
+    ],
+    "enableFilter": true,
+    "enableSorting": true,
+    "rowSelection": "multiple",
+    "gridHeight": 60
+}

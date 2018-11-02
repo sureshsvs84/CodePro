@@ -1,0 +1,32 @@
+{
+    "columnDefs": [
+        {
+            "headerName": "Group",
+            "field": "group",
+            "cellRenderer": "agGroupCellRenderer"
+          },
+          {
+            "headerName": "Athlete",
+            "field": "athlete"
+          },
+          {
+            "headerName": "Year",
+            "field": "year"
+          },
+          {
+            "headerName": "Country",
+            "field": "country",
+            "width": 650
+          }
+    ],
+    "defaultColDef": {
+        "width": 80
+      },
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": true,
+    "searchable":true,
+    "gridActions":true,
+    "gridTitlePanel":true,
+    "gridHeight":65
+}

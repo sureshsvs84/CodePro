@@ -1,0 +1,177 @@
+{"GeneralAddressHeader":{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter":true,
+            "width":50
+        },
+        {
+            "headerName": "Country",
+            "field": "Country",
+            "filter": "agTextColumnFilter",
+            "width":110,
+            "headerTooltip": "Country"
+        },
+        {
+            "headerName": "State/country Province",
+            "field": "County",
+            "filter": "agTextColumnFilter",
+            "width":120,
+            "headerTooltip": "State/country Province"
+
+        },
+        {
+            "headerName": "City",
+            "field": "City",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "City"
+        },
+        {
+            "headerName": "Address",
+            "field": "Address",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Address",
+            "width":130          
+        },
+        {
+            "headerName": "Postal Code",
+            "field": "PostalCode",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "Postal Code"
+        },
+        {
+            "headerName": "EU VAT Prefix",
+            "field": "EUVatPrefix",
+            "filter": "agTextColumnFilter",
+            "width":120,
+            "headerTooltip": "EU VAT Prefix"
+        },
+        {
+            "headerName": "VAT Tax Registration No.",
+            "field": "VatTaxRegNumber",
+            "filter": "agTextColumnFilter",
+            "width":120,
+            "headerTooltip": "VAT Tax Registration No"
+        },
+        {
+            "headerName": "",
+            "field": "AddressId",
+            "cellRenderer": "EditRenderer",
+            "cellRendererParams": {
+                "action": "EditAddressReference",
+                "popupId": "add-address"
+            },
+            "suppressFilter":true,
+            "suppressSorting": true,
+            "width": 80
+        }
+    ],
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": false,
+    "rowSelection":"multiple",
+    "searchable":true,
+    "gridActions":true,
+    "gridTitlePanel":false,
+    "gridHeight":50
+},
+"GeneralContactHeader":{
+    "columnDefs": [
+        {
+            "checkboxSelection": true,
+            "headerCheckboxSelectionFilteredOnly": true,
+            "suppressFilter":true,
+            "width":50
+        },
+        {
+            "headerName": "Address",
+            "field": "contactAddress",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Address" ,
+            "width":110     
+        },
+        {
+            "headerName": "",
+            "field": "CustomerAddressId",
+            "filter": "agTextColumnFilter",
+            "hide":true           
+        },
+        {
+            "headerName": "Contact Name",
+            "field": "ContactPersonName",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Contact Name",
+            "width":100          
+        },
+        {
+            "headerName": "Salutation",
+            "field": "Salutation",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "Salutation"
+        },
+        {
+            "headerName": "Position",
+            "field": "Position",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Position",
+            "width":100
+        },
+        {
+            "headerName": "Telephone No",
+            "field": "Landline",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Telephone No",
+            "width":100
+        },
+        {
+            "headerName": "Fax No",
+            "field": "Fax",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "Fax No"
+        },
+        {
+            "headerName": "Mobile No",
+            "field": "Mobile",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "Mobile No"
+        },
+        {
+            "headerName": "Email",
+            "field": "Email",
+            "filter": "agTextColumnFilter",
+            "width":100,
+            "headerTooltip": "Email"
+        },
+        {
+            "headerName": "Others Details",
+            "field": "OtherDetail",
+            "filter": "agTextColumnFilter",
+            "headerTooltip": "Others Details",
+            "width":100  
+        },
+        {
+            "headerName": "",
+            "field": "",
+            "cellRenderer": "EditRenderer",
+            "cellRendererParams": {
+                "action": "EditContactReference",
+                "popupId": "add-contact"
+            },
+            "suppressFilter":true,
+            "width": 80
+        }
+    ],
+    "enableFilter":true, 
+    "enableSorting":true, 
+    "pagination": false,
+    "rowSelection":"multiple",
+    "gridHeight":50
+}
+
+}
